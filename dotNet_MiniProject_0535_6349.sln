@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "MiniProject_DAL\DAL.csproj", "{0817C6A3-F7AB-4592-BB05-04FD963AD47E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "MiniProject_DAL\DAL.csproj", "{0817C6A3-F7AB-4592-BB05-04FD963AD47E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "MiniProject_UI\UI.csproj", "{377C06EA-1244-4015-931D-DE1827BF73E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BE", "MiniProject_BE\BE.csproj", "{232B2BF9-AE9B-4AF0-8007-5A6479EFF907}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BE", "MiniProject_BE\BE.csproj", "{232B2BF9-AE9B-4AF0-8007-5A6479EFF907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "MiniProject_BL\BL.csproj", "{B275C625-E8C4-4F0A-8059-CFB8AF9A79D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "MiniProject_BL\BL.csproj", "{B275C625-E8C4-4F0A-8059-CFB8AF9A79D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS", "DS\DS.csproj", "{F5046B16-168B-49DE-88F3-2A95F1D5717B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DS", "DS\DS.csproj", "{F5046B16-168B-49DE-88F3-2A95F1D5717B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TmpUI", "TmpUI\TmpUI.csproj", "{B9C3EDB0-BB0F-4F9A-9C48-45957505FB2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F5046B16-168B-49DE-88F3-2A95F1D5717B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5046B16-168B-49DE-88F3-2A95F1D5717B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5046B16-168B-49DE-88F3-2A95F1D5717B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9C3EDB0-BB0F-4F9A-9C48-45957505FB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C3EDB0-BB0F-4F9A-9C48-45957505FB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C3EDB0-BB0F-4F9A-9C48-45957505FB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C3EDB0-BB0F-4F9A-9C48-45957505FB2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

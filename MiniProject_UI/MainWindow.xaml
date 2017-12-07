@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniProject_UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="596.493" Width="834.878">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="435.2"/>
+        </Grid.RowDefinitions>
+        <Label Name="title" Content="ארגון המטפלות - מחוז ירושלים" HorizontalAlignment="Right" Margin="0,0,-0.2,0" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe UI Light" Height="74" Width="629" Grid.RowSpan="2"/>
+        <Label Name="management" Content="ניהול" HorizontalAlignment="Left" Margin="729,25,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Calibri Light" FontSize="22" Height="39" Width="50" BorderThickness="0,0,0,4" BorderBrush="Blue" Foreground="Blue"/>
+        <Label Name="settings" Content="הגדרות" HorizontalAlignment="Left" Margin="633,25,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Calibri Light" FontSize="22" Height="39" Width="69" MouseEnter="settings_MouseEnter" MouseLeave="settings_MouseLeave"/>
+
     </Grid>
 </Window>

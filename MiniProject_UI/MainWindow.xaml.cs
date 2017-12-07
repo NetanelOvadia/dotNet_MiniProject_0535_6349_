@@ -24,5 +24,19 @@ namespace MiniProject_UI
         {
             InitializeComponent();
         }
+
+        private void settings_MouseEnter(object sender, MouseEventArgs e)
+        {
+            designedButtonWithDetails tmp = sender as designedButtonWithDetails;
+            tmp.Foreground = Brushes.Blue;
+            tmp.Cursor = Cursors.Hand;
+        }
+
+        private void settings_MouseLeave(object sender, MouseEventArgs e)
+        {
+            designedButtonWithDetails tmp = sender as designedButtonWithDetails;
+            tmp.Foreground = Brushes.Black;
+            tmp.Cursor = Cursors.None;
+        }
     }
 }
