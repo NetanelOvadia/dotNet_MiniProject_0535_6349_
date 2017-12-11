@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using BE;
 
-namespace DS
+namespace DAL
 {
-    public class Dal_imp : DAL.Idal
+    public class Dal_imp : Idal
     {
         public void addChild(Child child)
         {
