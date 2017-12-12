@@ -4,13 +4,30 @@ using System.Text;
 
 namespace BE
 {
-    public class Child
+    public class Child : IComparable
     {
-        int id, mothersId;
+        public int Id { get; set; }
+        public int MothersId { get; set; }
 
-        string firstName, lastName, birthDate;
-        List<string> specialNeeds = new List<string>();
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string SpecialNeeds { get; set; }
+
+        public DateTime birthDate;
+
+        public Age age;
 
         bool isSpecialNeeds;
+
+        Child()
+        {
+
+            age = new Age(birthDate);
+        }
+        public int CompareTo(object obj)
+        {
+            Child tmp = obj as Child;
+            return Id.CompareTo(tmp.Id);
+        }
     }
 }

@@ -4,20 +4,29 @@ using System.Text;
 
 namespace BE
 {
-    public class Mother
+    public class Mother:IComparable
     {
-        int id, phoneNumber;
+        public int Id { get; set; }
+        public int PhoneNumber { get; set; }
+        public int[,] RequiredSavingHours = new int[2, 6];
 
-        string firstName, lastName, address, addressLookingFor;
-        List<string> notes = new List<string>();
+        string FirstName { get; set; }
+        string LastName { get; set; }
+        public string Address { get; set; }
+        public string AddressLookingFor { get; set; }
+        public string Notes { get; set; }
 
         bool[] requiredSavingDays /*days the mother looking for nanny*/ = new bool[6];
-
-        float[,] requiredSavingHours = new float[2, 6];
 
         public override string ToString()
         {
             return base.ToString();
+        }
+
+        public int CompareTo(object obj)
+        {
+            Mother tmp = obj as Mother;
+            return Id.CompareTo(tmp.Id);
         }
     }
 }
