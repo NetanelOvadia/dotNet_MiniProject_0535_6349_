@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using BE;
+using DS;
 
 namespace DAL
 {
@@ -9,6 +10,7 @@ namespace DAL
     {
         public void addChild(Child child)
         {
+            DS.DataSource.childList.Find.
             throw new NotImplementedException();
         }
 

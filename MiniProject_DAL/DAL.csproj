@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DS\DS.csproj" />
     <ProjectReference Include="..\MiniProject_BE\BE.csproj" />
   </ItemGroup>
 

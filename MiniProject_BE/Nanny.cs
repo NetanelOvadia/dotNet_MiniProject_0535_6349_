@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
+//using System.Collections.Generic; //not needed because of the line above
 using System.Text;
 
 namespace BE
 {
-    public class Nanny :IComparable
+    public class Nanny : IComparable, IEnumerable
     {
+        #region All the paramerters.
         public int Id { get; set; }
         public int PhoneNumber { get; set; }
         public int Floor/*=Koma*/{ get; set; }
@@ -30,6 +32,8 @@ namespace BE
         DateTime birthDay = new DateTime();
 
         Age age;
+        #endregion
+
         Nanny(int year, int month, int day)
         {
             //set nannys age
@@ -72,6 +76,29 @@ namespace BE
         {
             Nanny tmp = obj as Nanny;
             return Id.CompareTo(tmp.Id);
+        }
+
+        public IEnumerator GetEnumerator() //helps to get current element from the collection..
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class nannyEnumerator : IEnumerator
+    {
+        public object Current()
+        {
+            throw new NotImplementedException() };
+        }
+
+        public bool MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
         }
     }
 }
